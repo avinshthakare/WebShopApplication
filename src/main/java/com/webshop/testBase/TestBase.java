@@ -1,14 +1,10 @@
 package com.webshop.testBase;
-
-import java.time.Duration;
-
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Test;
-
 import io.github.bonigarcia.wdm.WebDriverManager;
-
+import java.time.Duration;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 
 public class TestBase {
@@ -18,8 +14,24 @@ public static  WebDriver driver;
 	@BeforeMethod
     public void setUp() {
         // Initializes the Edge browser (Change to ChromeDriver if preferred)
-		WebDriverManager.edgedriver().setup();
-        driver = new EdgeDriver();
+			String br = "Edge";
+		
+		if (br.equalsIgnoreCase("edge"))
+		{
+			WebDriverManager.edgedriver().setup();
+	        driver = new EdgeDriver();
+	        
+        }else if(br.equalsIgnoreCase("chrome"))
+        {
+        	WebDriverManager.chromedriver().setup();
+            driver = new ChromeDriver();	
+        	
+        }else 
+        {
+        	System.out.println("Invaild Browser");
+        }
+		
+		
         driver.get("https://demowebshop.tricentis.com/"); 
         driver.manage().window().maximize();
         driver.manage().deleteAllCookies();
@@ -30,7 +42,7 @@ public static  WebDriver driver;
 	@AfterMethod
     public void tearDown() 
 	{
-        driver.quit();
+     //   driver.quit();
 	}
 	
 	
