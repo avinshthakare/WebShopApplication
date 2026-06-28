@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-06-28T15:26:08 IST" name="Default suite" finished-at="2026-06-28T15:26:23 IST" duration-ms="14946">
+  <suite started-at="2026-06-28T21:35:42 IST" name="Default suite" finished-at="2026-06-28T21:36:44 IST" duration-ms="62163">
     <groups>
     </groups>
-    <test started-at="2026-06-28T15:26:08 IST" name="Default test" finished-at="2026-06-28T15:26:23 IST" duration-ms="14946">
+    <test started-at="2026-06-28T21:35:42 IST" name="Default test" finished-at="2026-06-28T21:36:44 IST" duration-ms="62163">
       <class name="com.webshop.testLayer.AddCardFuntionality">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.webshop.testLayer.AddCardFuntionality@449a4f23]" started-at="2026-06-28T15:26:08 IST" name="setUp" finished-at="2026-06-28T15:26:12 IST" duration-ms="4484" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.webshop.testLayer.AddCardFuntionality@449a4f23]" started-at="2026-06-28T21:35:42 IST" name="setUp" finished-at="2026-06-28T21:35:51 IST" duration-ms="9154" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifyUserBuyComputerAsGuest()[pri:0, instance:com.webshop.testLayer.AddCardFuntionality@449a4f23]" started-at="2026-06-28T15:26:12 IST" name="verifyUserBuyComputerAsGuest" finished-at="2026-06-28T15:26:23 IST" duration-ms="10416" status="PASS">
+        <test-method signature="verifyUserBuyComputerAsGuest()[pri:0, instance:com.webshop.testLayer.AddCardFuntionality@449a4f23]" started-at="2026-06-28T21:35:51 IST" name="verifyUserBuyComputerAsGuest" finished-at="2026-06-28T21:36:43 IST" duration-ms="52437" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyUserBuyComputerAsGuest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.webshop.testLayer.AddCardFuntionality@449a4f23]" started-at="2026-06-28T15:26:23 IST" name="tearDown" finished-at="2026-06-28T15:26:23 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.webshop.testLayer.AddCardFuntionality@449a4f23]" started-at="2026-06-28T21:36:43 IST" name="tearDown" finished-at="2026-06-28T21:36:44 IST" duration-ms="483" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

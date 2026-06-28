@@ -18,7 +18,7 @@ public class ProductPage {
         PageFactory.initElements(driver, this);     
     }
     
-    //--------------------Obj Repo (Anchor Labels)-------------------------
+    //--------------------Obj Repo-------------------------
     @FindBy(xpath = "//label[contains(text(),'Processor')]/following::input[contains(@id,'product_attribute')][1]")
     WebElement processor_redio_btn;
     
@@ -31,13 +31,22 @@ public class ProductPage {
     @FindBy(xpath = "//label[contains(text(),'Software')]/following::input[contains(@id,'product_attribute')][1]")
     WebElement software_checkbox;
     
+    @FindBy(xpath= "//input[@value='Add to cart']")
+    WebElement Addcart_btn;
+    
     //--------------------Action Methods-------------------
     public void selectMandateDetails()
     {   
     	processor_redio_btn.click();
     	ram_redio_btn.click();
     	hdd_redio_btn.click();
+    	if(!(software_checkbox.isSelected()))
+    	{
     	software_checkbox.click();
-    	
+    	}
+    }
+    public void clickOnAddcartButton()
+    {
+    	Addcart_btn.click();	
     }
 }
