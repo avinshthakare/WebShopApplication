@@ -21,7 +21,7 @@ public class LoginFunctionality extends TestBase {
 	home_obj.clickOnLoginLink();
 	Thread.sleep(2000);
 	login_obj.enterEmail(Email);
-	login_obj.enterPassword("AkshayKumar");
+	login_obj.enterPassword("AkshayKumar ");
 	login_obj.clickOnRememberCheckbox();
 	login_obj.clickOnLoginButton();
 	Thread.sleep(2000);

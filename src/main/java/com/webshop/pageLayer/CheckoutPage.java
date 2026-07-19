@@ -5,7 +5,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.webshop.utilities.Dropdown;
+import com.webshop.utilities.UtilClass;
 import com.webshop.utilities.RandomFunction;
 
 public class CheckoutPage {
@@ -123,7 +123,7 @@ public class CheckoutPage {
 	}
 	
 	public void enterBillingAddressDetails() throws InterruptedException
-	{	Dropdown select = new Dropdown();
+	{	UtilClass select = new UtilClass();
 		RandomFunction ran = new RandomFunction();
 		Fname_txtbox.sendKeys(ran.randomString("fname"));
 		Lname_txtbox.sendKeys(ran.randomString("lname"));
@@ -161,7 +161,7 @@ public class CheckoutPage {
 	
 	public void enterPaymentInfo()
 	{
-		Dropdown select = new Dropdown();
+		UtilClass select = new UtilClass();
 		select.dropdown(Creditcard_dropdown,"Master");
 		CardHoldder_txtbox.sendKeys("Shaktiman");
 		CardNo_txtbox.sendKeys("1111111");
